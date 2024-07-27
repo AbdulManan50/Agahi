@@ -16,20 +16,27 @@
   <body>
     <section>
       <nav
-        class="flex justify-between w-[1280px] mx-auto h-[90px] items-center"
+        class="flex justify-between md:w-[1280px] w-[95%] mx-auto h-[90px] items-center"
       >
         <div>
           <img class="w-32" src="image/logo.png" alt="" />
         </div>
-        <div class="flex gap-20 font-poppines">
-          <ul class="flex gap-10 text-end uppercase items-center">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>How We Are</li>
-            <li><a href="#"></a>What We Do</li>
-            <li><a href="#"></a>Gallery</li>
-            <li><a href="#"></a>Publications</li>
-            <li><a href="#"></a>Get Involved</li>
-          </ul>
+        <div
+          class="flex md:gap-20 gap-10 font-poppines justify-center items-center"
+        >
+          <div class="hidden md:block">
+            <ul class="flex gap-10 text-end uppercase items-center">
+              <li><a href="#"></a>Home</li>
+              <li><a href="#"></a>How We Are</li>
+              <li><a href="#"></a>What We Do</li>
+              <li><a href="#"></a>Gallery</li>
+              <li><a href="#"></a>Publications</li>
+              <li><a href="#"></a>Get Involved</li>
+            </ul>
+          </div>
+          <div class="block md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <button
             class="bg-[#E96F2D] pl-5 pr-5 pt-2 pb-2 rounded-full text-[#422477] font-medium hover:bg-[#422477] hover:text-[#E96F2D] transition-all duration-500 ease-in-out"
           >
@@ -39,7 +46,7 @@
       </nav>
     </section>
     <section>
-      <div class="main-slider h-[90vh] w-[100%] overflow-hidden">
+      <div class="main-slider sm:h-[90vh] h-[100vh] w-[100%] overflow-hidden">
         <div class="relative h-full w-full">
           <img
             class="slide h-[100%] w-[100%] absolute transition-transform duration-1000 ease-in-out"
@@ -58,15 +65,17 @@
           />
           <div class="absolute inset-0 bg-black opacity-70"></div>
           <div
-            class="absolute w-[1280px] top-[20%] left-20 flex items-center justify-center gap-10"
+            class="absolute md:w-[1280px] w-[95%] sm:top-[20%] top-10 md:left-20 left-5 flex flex-col sm:flex-row items-center justify-center md:gap-10 gap-5"
           >
-            <div class="flex w-[60%] flex-col gap-3">
+            <div class="flex md:w-[60%] sm:w-[50%] w-full flex-col gap-3">
               <h3
-                class="text-xl font-bold text-[#e96f2d] tracking-[3px] font-poppines"
+                class="md:text-xl text-base font-bold text-[#e96f2d] tracking-[3px] font-poppines"
               >
                 CHARITY IS PRIORITY
               </h3>
-              <h1 class="font-Merriweather font-bold text-6xl text-white">
+              <h1
+                class="font-Merriweather font-bold md:text-6xl text-3xl text-white"
+              >
                 GIVING HELP TO<br />
                 THOSE WHO NEED IT.
               </h1>
@@ -75,15 +84,17 @@
                 education, or anatomical dissection.Body donation plays a
                 crucial role in advancing medical science
               </p>
-              <button
-                class="w-[25%] bg-[#E96F2D] pl-5 pr-5 pt-2 pb-2 rounded-full text-[#422477] font-poppines font-medium border-[2px] border-[#e96f2d] hover:bg-[#FC666800] hover:text-white transition-all duration-500 ease-in-out"
-              >
-                Donate Now
-              </button>
+              <div>
+                <button
+                  class="= bg-[#E96F2D] py-2 px-3 rounded-full text-[#422477] font-poppines font-medium border-[2px] border-[#e96f2d] hover:bg-[#FC666800] hover:text-white transition-all duration-500 ease-in-out"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
-            <div class="flex gap-5 items-center w-[50%]">
+            <div class="flex gap-5 items-center sm:w-[50%] w-full">
               <img
-                class="border-[5px] border-[#422477] rounded-3xl"
+                class="border-[5px] border-[#422477] rounded-3xl sm:w-[45%] w-[40%]"
                 src="image/asset 1.png"
                 alt=""
                 style="
@@ -91,7 +102,7 @@
                 "
               />
               <img
-                class="border-[5px] border-[#e96f2d] rounded-3xl"
+                class="border-[5px] border-[#e96f2d] rounded-3xl sm:w-[45%] w-[40%]"
                 src="image/asste2.png"
                 alt=""
                 style="
@@ -104,13 +115,17 @@
       </div>
     </section>
     <section>
-      <div class="w-[1280px] py-16 mx-auto flex items-center gap-10">
-        <div class="flex flex-col gap-6">
-          <h1 class="font-poppines tracking-[1px] font-medium">
+      <div class="md:w-[1280px] w-[95%] py-16 mx-auto flex sm:flex-row flex-col items-center gap-10">
+        <div class="flex  flex-col md:gap-6 gap-3">
+          <h1
+            class="font-poppines tracking-[1px] font-medium md:text-base text-sm"
+          >
             INTRODUCTION TO CHARITY PLATFORM
           </h1>
           <div class="w-48 h-[3px] bg-[#e96f2d]"></div>
-          <h1 class="text-[#e96f2d] font-bold text-6xl font-Merriweather">
+          <h1
+            class="text-[#e96f2d] font-bold md:text-6xl text-3xl font-Merriweather"
+          >
             ABOUT US
           </h1>
           <p class="font-semibold italic text[17px] font-Merriweather">
@@ -130,12 +145,13 @@
               <img src="image/asset 6.png" class="w-[20%]" alt="" />
             </div>
           </div>
-
-          <button
-            class="w-[25%] bg-[#422477] pl-5 pr-5 pt-2 pb-2 rounded-full text-white font-poppines font-medium border-[2px] border-[#422477] hover:bg-[#FC666800] hover:text-[#E96F2D] transition-all duration-500 ease-in-out"
-          >
-            Donate Now
-          </button>
+          <div>
+            <button
+              class=" bg-[#422477] py-2 md:px-3 px-5 rounded-full text-white font-poppines font-medium border-[2px] border-[#422477] hover:bg-[#FC666800] hover:text-[#E96F2D] transition-all duration-500 ease-in-out"
+            >
+              Donate Now
+            </button>
+          </div>
         </div>
         <div>
           <div class="flex gap-10">
@@ -171,10 +187,10 @@
       </div>
     </section>
     <section
-      class="bg-[#EB7230] bg-[url('image/secimg.png')] bg-cover bg-center h-52 w-ful mt-40 mb-20"
+      class="bg-[#EB7230] bg-[url('image/secimg.png')] bg-cover bg-center sm:h-52  h-auto sm:py-0 py-20  w-full sm:mt-40 mb-20"
     >
-      <div class="w-[1280px] mx-auto flex text-center justify-center gap-10">
-        <div class="bg-white px-10 w-[35%] pb-10 -mt-28 shadow-xl">
+      <div class="md:w-[1280px] w-[95%] mx-auto flex sm:flex-row flex-col  text-center justify-center md:gap-10 gap-5">
+        <div class="bg-white px-10 md:w-[35%] sm:w-[50%] w-full pb-10 sm:-mt-28 mt-0 shadow-xl">
           <div>
             <i
               class="fa-solid fa-bullseye text-white text-[60px] hover:text-[#422477] px-4 py-4 bg-[#EB7230] rounded-full transition-all ease-in-out duration-500 -mt-24 mb-3"
@@ -189,7 +205,7 @@
             and institutions to achieve maximum efficiency.
           </p>
         </div>
-        <div class="bg-white px-10 w-[35%] pb-10 -mt-28 shadow-xl">
+        <div class="bg-white px-10 md:w-[35%] sm:w-[50%] mt-10 w-full pb-10 sm:-mt-28 mt-0 shadow-xl">
           <div>
             <i
               class="fa-solid fa-eye-low-vision text-white text-[40px] hover:text-[#422477] px-4 py-6 bg-[#EB7230] rounded-full transition-all ease-in-out duration-500 -mt-24 mb-3"
@@ -207,8 +223,8 @@
       </div>
     </section>
     <section>
-      <div class="w-[1280px] mx-auto flex gap-10 justify-center pb-20">
-        <div class="flex gap-10 items-end w-[50%]">
+      <div class="md:w-[1280px] w-[95%] mx-auto flex flex-col  sm:flex-row gap-10 justify-center pb-20">
+        <div class="flex gap-10 items-end sm:w-[50%] w-full">
           <div class="flex flex-col gap-y-10 items-end">
             <img class="rounded-3xl" src="image/asset 13.png" alt="" />
             <img class="rounded-3xl w-40" src="image/asset 14.webp" alt="" />
@@ -217,7 +233,7 @@
             <img class="rounded-3xl w-[90%]" src="image/asset 15.webp" alt="" />
           </div>
         </div>
-        <div class="w-[50%] flex flex-col gap-5">
+        <div class="sm:w-[50%] w-full flex flex-col gap-5 ">
           <div>
             <h1
               class="font-Merriweather font-semibold text-[45px] text-[#e96f2d]"
@@ -243,7 +259,9 @@
           </div>
           <div class="flex gap-3 items-center">
             <div>
-              <i class="fa-solid fa-database text-[40px] px-4 py-5 bg-[#e96f2d] rounded-full text-white hover:bg-[#422477] hover:text-[#e96f2d]"></i>
+              <i
+                class="fa-solid fa-database text-[40px] px-4 py-5 bg-[#e96f2d] rounded-full text-white hover:bg-[#422477] hover:text-[#e96f2d]"
+              ></i>
             </div>
             <div>
               <h1 class="text-[19px] font-bold text-[#e96f2d]">
@@ -258,10 +276,14 @@
           </div>
           <div class="flex gap-3 items-center">
             <div>
-              <i class="fa-solid fa-users-rays text-[40px] px-4 py-5 bg-[#e96f2d] rounded-full text-white hover:bg-[#422477] hover:text-[#e96f2d]"></i>
+              <i
+                class="fa-solid fa-users-rays text-[40px] px-4 py-5 bg-[#e96f2d] rounded-full text-white hover:bg-[#422477] hover:text-[#e96f2d]"
+              ></i>
             </div>
             <div>
-              <h1 class="text-[19px] font-bold text-[#e96f2d]">FOCUSED SUPPORT</h1>
+              <h1 class="text-[19px] font-bold text-[#e96f2d]">
+                FOCUSED SUPPORT
+              </h1>
               <p class="text-[15px]">
                 Charity law within the UK varies among England and Wales,
                 Scotland and Northern Ireland, but the fundamental principles
@@ -273,156 +295,262 @@
       </div>
     </section>
     <section class="bg-[#EFEFEF]">
-      <div class="w-[1280px] mx-auto py-20 flex flex-col items-center gap-10 ">
+      <div class="md:w-[1280px] w-[95%] mx-auto py-20 flex flex-col items-center gap-10">
         <div>
-          <h1 class="font-Merriweather font-semibold text-[45px] text-[#e96f2d]">KEY PROJECTS</h1>
+          <h1
+            class="font-Merriweather font-semibold text-[45px] text-[#e96f2d]"
+          >
+            KEY PROJECTS
+          </h1>
           <div class="w-40 h-[4px] bg-[#e96f2d]"></div>
         </div>
-        <div class="flex gap-10">
-          <div class="flex w-[50%]">
-            <div><img class="w-[600px]" src="image/asset 16.png" alt=""></div>
-            <div class="bg-[#e96f2d] flex flex-col justify-center px-5">
-              <h1 class="font-poppines font-bold text-white text-[22px]">WASH SYSTEM STRENGTHENING INITIATIVE</h1>
-              <p class="text-[15px] text-white">District Muzaffargarh</p>
+        <div class="flex sm:flex-row flex-col  md:gap-10 gap-5">
+          <div class="flex  sm:w-[50%] w-full">
+            <div class="w-[50%]">
+              <img class="w-[600px] h-[100%]" src="image/asset 16.png" alt="" />
+            </div>
+            <div class="bg-[#E96F2D] flex flex-col justify-center md:px-5 px-2 w-[50%]">
+              <h1 class="font-poppines font-bold text-white md:text-[22px] text-lg">
+                WASH SYSTEM STRENGTHENING INITIATIVE
+              </h1>
+              <p class="text-[15px] text-white">District Kasur</p>
             </div>
           </div>
-          <div class="flex w-[50%]">
-            <div class="w-[50%]"><img class="w-[600px]" src="image/asset 17.png" alt=""></div>
-            <div class="bg-[#58AEEE] flex flex-col justify-center px-5 w-[50%]">
-              <h1 class="font-poppines font-bold text-white text-[22px]">
-                EMERGENCY RELIEFT ASSISTANCE TO 2023 HEAVY RAINFALL AND FLOOD AFFECTED COMMUNITIES.</h1>
+          <div class="flex sm:w-[50%] w-full">
+            <div class="w-[50%]">
+              <img class="w-[600px] h-[100%]" src="image/asset 17.png" alt="" />
+            </div>
+            <div class="bg-[#58AEEE] flex flex-col justify-center md:px-5 px-2 w-[50%]">
+              <h1 class="font-poppines font-bold text-white md:text-[22px] text-lg">
+                EMERGENCY RELIEFT ASSISTANCE TO 2023 HEAVY RAINFALL AND FLOOD
+                AFFECTED COMMUNITIES.
+              </h1>
               <p class="text-[15px] text-white">District Kasur</p>
             </div>
           </div>
         </div>
-        <div class="flex gap-10">
-          <div class="flex w-[50%]">
-            <div class="w-[50%]"><img class="w-[600px]" src="image/asset 18.png" alt=""></div>
-            <div class="bg-[#B12132] flex flex-col justify-center px-5 w-[50%]">
-              <h1 class="font-poppines font-bold text-white text-[22px]">
-                EMERGENCY RELIEFT ASSISTANCE TO 2023 HEAVY RAINFALL AND FLOOD AFFECTED COMMUNITIES.</h1>
+        <div class="flex sm:flex-row flex-col  md:gap-10 gap-5">
+          <div class="flex sm:w-[50%] w-full">
+            <div class="w-[50%]">
+              <img class="w-[600px] h-full" src="image/asset 18.png" alt="" />
+            </div>
+            <div class="bg-[#B12132] flex flex-col justify-center md:px-5 px-2 w-[50%]">
+              <h1 class="font-poppines font-bold text-white md:text-[22px] text-lg ">
+                EMERGENCY RELIEFT ASSISTANCE TO 2023 HEAVY RAINFALL AND FLOOD
+                AFFECTED COMMUNITIES.
+              </h1>
               <p class="text-[15px] text-white">District Kasur</p>
             </div>
           </div>
-          <div class="flex w-[50%]">
-            <div class="w-[50%]"><img class="w-[600px]" src="image/asset 17.png" alt=""></div>
-            <div class="bg-[#51AB19] flex flex-col justify-center px-5 w-[50%]">
-              <h1 class="font-poppines font-bold text-white text-[22px]">
-                LOCALIZED MULTI HAZARD ANTICIPATORY ACTION FACILITY PAKISTAN</h1>
+          <div class="flex sm:w-[50%] w-full">
+            <div class="w-[50%]">
+              <img class="w-[600px] h-full" src="image/asset 17.png" alt="" />
+            </div>
+            <div class="bg-[#51AB19] flex flex-col justify-center md:px-5 px-2 w-[50%]">
+              <h1 class="font-poppines font-bold text-white md:text-[22px] text-lg">
+                LOCALIZED MULTI HAZARD ANTICIPATORY ACTION FACILITY PAKISTAN
+              </h1>
               <p class="text-[15px] text-white">District Vehari</p>
             </div>
           </div>
         </div>
       </div>
-
     </section>
-    <section class="bg-[url('image/bgground.jpeg')] h-[100vh] mb-20 bg-cover bg-fixed bg-center flex items-center">
-      <div class="w-[1280px] mx-auto flex flex-col gap-10">
-        <h1 class="font-Merriweather font-semibold text-[45px] text-[#e96f2d] text-center">LATEST NEWS & EVENTS</h1>
-        <div class="flex gap-10">
-          <div class="w-[30%]">
-              <div><img class="rounded-t-xl" src="image/blog1.png" alt=""></div>
-              <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
-                <button class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"> March 28, 2024</button>
-                <h1 class="text-black text-[20px] font-semibold ">HAPPY WORLD NGO DAY!</h1>
-                <button class="text-[#7a7a7a]">Read More<i class="fa-solid fa-right-long px-2"></i></button>
-              </div>
+    <section
+      class="bg-[url('image/bgground.jpeg')] sm:h-[100vh] h-auto mb-20 bg-cover bg-fixed bg-center flex items-center"
+    >
+      <div class="md:w-[1280px] w-[95%] mx-auto flex flex-col gap-10 sm:selection:py-0 py-20">
+        <h1
+          class="font-Merriweather font-semibold text-[45px] text-[#e96f2d] text-center"
+        >
+          LATEST NEWS & EVENTS
+        </h1>
+        <div class="flex sm:flex-row flex-col  gap-10">
+          <div class="sm:w-[30%] w-full">
+            <div><img class="rounded-t-xl" src="image/blog1.png" alt="" /></div>
+            <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
+              <button
+                class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"
+              >
+                March 28, 2024
+              </button>
+              <h1 class="text-black text-[20px] font-semibold">
+                HAPPY WORLD NGO DAY!
+              </h1>
+              <button class="text-[#7a7a7a]">
+                Read More<i class="fa-solid fa-right-long px-2"></i>
+              </button>
+            </div>
           </div>
-          <div class="w-[30%]">
-              <div><img class="rounded-t-xl" src="image/blog2.png" alt=""></div>
-              <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
-                <button class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"> March 28, 2024</button>
-                <h1 class="text-black text-[20px] font-semibold ">PROCUREMENT OF SUPPLIES</h1>
-                <button class="text-[#7a7a7a]">Read More<i class="fa-solid fa-right-long px-2"></i></button>
-              </div>
+          <div class="sm:w-[30%] w-full">
+            <div><img class="rounded-t-xl" src="image/blog2.png" alt="" /></div>
+            <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
+              <button
+                class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"
+              >
+                March 28, 2024
+              </button>
+              <h1 class="text-black text-[20px] font-semibold">
+                PROCUREMENT OF SUPPLIES
+              </h1>
+              <button class="text-[#7a7a7a]">
+                Read More<i class="fa-solid fa-right-long px-2"></i>
+              </button>
+            </div>
           </div>
-          <div class="w-[30%]">
-              <div><img class="rounded-t-xl" src="image/blog3.png" alt=""></div>
-              <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
-                <button class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"> March 28, 2024</button>
-                <h1 class="text-black text-[20px] font-semibold ">GENERAL BUSINESS LOAN</h1>
-                <button class="text-[#7a7a7a]">Read More<i class="fa-solid fa-right-long px-2"></i></button>
-              </div>
+          <div class="sm:w-[30%] w-full">
+            <div><img class="rounded-t-xl" src="image/blog3.png" alt="" /></div>
+            <div class="bg-white px-5 pt-8 pb-2 relative rounded-b-xl">
+              <button
+                class="px-3 py-3 bg-white text-[#e96f2d] shadow-xl rounded-full absolute -top-7"
+              >
+                March 28, 2024
+              </button>
+              <h1 class="text-black text-[20px] font-semibold">
+                GENERAL BUSINESS LOAN
+              </h1>
+              <button class="text-[#7a7a7a]">
+                Read More<i class="fa-solid fa-right-long px-2"></i>
+              </button>
+            </div>
           </div>
         </div>
-
-
       </div>
     </section>
     <section>
-      <div class="w-[1280px] mx-auto flex gap-10 pb-20">
-        <div class="bg-white shadow-lg w-[50%] px-5 py-10 rounded-3xl">
-          <h1 class="font-Merriweather text-[45px] font-semibold text-[#e96f2d]">GET IN TOUCH</h1>
+      <div class="md:w-[1280px] w-[95%] mx-auto flex sm:flex-row flex-col md:gap-10 gap-5 pb-20">
+        <div class="bg-white shadow-lg sm:w-[50%] w-full px-5 py-10 rounded-3xl">
+          <h1
+            class="font-Merriweather md:text-[45px] text-3xl font-semibold text-[#e96f2d] pb-3"
+          >
+            GET IN TOUCH
+          </h1>
           <form action="#" method="POST">
             <div class="mb-4">
-                <label for="name" class="block font-semibold"></label>
-                <input type="text" id="name" placeholder="Name" name="name" class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black" required>
+              <label for="name" class="block font-semibold"></label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                name="name"
+                class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black"
+                required
+              />
             </div>
             <div class="mb-4">
-                <label for="phone" class="block font-semibold"></label>
-                <input type="tel" id="phone" placeholder="Phon Number" name="phone" class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black" pattern="[0-9]{10}" required>
-                <small class="text-gray-600"></small>
+              <label for="phone" class="block font-semibold"></label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phon Number"
+                name="phone"
+                class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black"
+                pattern="[0-9]{10}"
+                required
+              />
+              <small class="text-gray-600"></small>
             </div>
             <div class="mb-4">
-                <label for="email" class="block font-semibold"></label>
-                <input type="email" placeholder="Email" id="email" name="email" class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black" required>
+              <label for="email" class="block font-semibold"></label>
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-4 border rounded-md focus:outline-none focus:border-black"
+                required
+              />
             </div>
             <div class="mb-4">
-                <label for="message" class="block font-semibold"></label>
-                <textarea id="message" placeholder="message" name="message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-black" rows="4" required></textarea>
+              <label for="message" class="block font-semibold"></label>
+              <textarea
+                id="message"
+                placeholder="message"
+                name="message"
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-black"
+                rows="4"
+                required
+              ></textarea>
             </div>
-            <button type="submit" class="bg-[#E96F2D] text-white px-4 py-2 rounded-md hover:bg-black focus:outline-none focus:bg-black">Submit</button>
-        </form>
+            <button
+              type="submit"
+              class="bg-[#E96F2D] text-white px-4 py-2 rounded-md hover:bg-black focus:outline-none focus:bg-black"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <div>
-          <iframe class="rounded-3xl h-[80vh]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.1832587135978!2d74.24692737511722!3d31.46414464991867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190223c54a890f%3A0xd8ec8dc1a04efb5b!2sJudicial%20Colony%20Phase%202!5e0!3m2!1sen!2s!4v1715113787019!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="sm:w-1/2 w-full">
+          <iframe
+            class="rounded-3xl h-[80vh] w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.1832587135978!2d74.24692737511722!3d31.46414464991867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190223c54a890f%3A0xd8ec8dc1a04efb5b!2sJudicial%20Colony%20Phase%202!5e0!3m2!1sen!2s!4v1715113787019!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
-    <footer class="bg-[url('image/footerimage.webp')] h-[70vh] bg-cover bg-center bg-repeat">
-      <div class="w-[1280px] mx-auto py-20 flex justify-around items-start">
-        <div class="w-[25%] flex flex-col gap-5 font-poppines">
-          <img class="w-52" src="image/logo.png" alt="">
-          <h1 class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+    <footer
+      class="bg-[url('image/footerimage.webp')] sm:h-[70vh] h-auto bg-cover bg-center bg-repeat"
+    >
+      <div class="md:w-[1280px] w-[95%] mx-auto sm:py-20 py-10 flex sm:flex-row flex-col justify-around items-start">
+        <div class="sm:w-[25%] w-full flex  flex-col gap-5 font-poppines">
+          <img class="w-52" src="image/logo.png" alt="" />
+          <h1 class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h1>
           <div class="flex flex-row gap-10">
-            <i class="fa-brands fa-facebook text-3xl text-[#4D68A0] "></i>
-            <i class="fa-brands fa-linkedin text-3xl text-[#1883BA] "></i>
-            <i class="fa-brands fa-square-x-twitter text-3xl text-[#000000]"></i>
+            <i class="fa-brands fa-facebook text-3xl text-[#4D68A0]"></i>
+            <i class="fa-brands fa-linkedin text-3xl text-[#1883BA]"></i>
+            <i
+              class="fa-brands fa-square-x-twitter text-3xl text-[#000000]"
+            ></i>
           </div>
         </div>
-        <div class="w-[25%] px-10">
-          <h1 class="text-xl text-[#e96f2d] font-bold pb-3">WHAT WE DO</h1>
-          <ul class="flex flex-col text-sm gap-5 font-poppines">
+        <div class="sm:w-[25%] w-full sm:pl-5 sm:pt-0 pt-5">
+          <h1 class="md:text-xl sm:text-base text-2xl text-[#e96f2d] font-bold pb-3">WHAT WE DO</h1>
+          <ul class="flex flex-col sm:text-sm text-base md:gap-5 gap-3 font-poppines">
             <li>Wash</li>
-            <li>Sustainable Livelihood</li>
-            <li>Health & Nutrition</li>
-            <li>Education & Governance</li>
-            <li>Disaster Risk Reduction & Resilience</li>
+            <li>Sustainable</li>
+            <li>Health</li>
+            <li>Education </li>
+            <li>Disaster</li>
           </ul>
         </div>
-        <div class="w-[25%]">
-          <h1 class="text-xl text-[#e96f2d] font-bold pb-3">About</h1>
-          <ul class="flex flex-col text-sm gap-5 font-poppines ">
+        <div class="sm:w-[25%] w-full">
+          <h1 class="md:text-xl sm:text-base text-2xl  text-[#e96f2d] font-bold pb-3">About</h1>
+          <ul class="flex flex-col sm:text-sm text-base md:gap-5 gap-3 font-poppines">
             <li>About AGAHE</li>
             <li>Governance</li>
             <li>Our Partners</li>
             <li>Geographical Outreach</li>
           </ul>
         </div>
-        <div class="w-[25%]">
-          <h1 class="text-xl text-[#e96f2d] font-bold pb-3">CONTACT US</h1>
-          <ul class="flex flex-col text-sm gap-5 font-poppines">
-            <li><i class="fa-solid fa-phone text-[#e96f2d] px-3"></i>042-35957916</li>
-            <li><i class="fa-solid fa-envelope text-[#e96f2d]  px-3"></i>info@agahe.org.pk</li>
-            <li><i class="fa-solid fa-location-dot text-[#e96f2d]  px-3"></i>House No. 3, Block A, Judicial Colony Phase II, Raiwind Road, Lahore, Pakistan</li>
+        <div class="sm:w-[25%] w-full">
+          <h1 class="md:text-xl sm:text-base text-2xl  text-[#e96f2d] font-bold pb-3">CONTACT US</h1>
+          <ul class="flex flex-col sm:text-sm text-base md:gap-5 gap-3 font-poppines">
+            <li>
+              <i class="fa-solid fa-phone text-[#e96f2d] px-3"></i>042-35957916
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope text-[#e96f2d] px-3"></i
+              >info@agahe.org.pk
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot text-[#e96f2d] px-3"></i>House
+              No. 3, Block A, Judicial Colony Phase II, Raiwind Road, Lahore,
+              Pakistan
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-    <div class="w-full h-10  bg-gradient-to-r from-[#E96F2D] to-[#F6D919]">
-
-    </div>
-
+    <div class="w-full h-10 bg-gradient-to-r from-[#E96F2D] to-[#F6D919]"></div>
     <script src="script.js"></script>
   </body>
 </html>
